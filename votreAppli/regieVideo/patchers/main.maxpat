@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1206.0, 857.0 ],
+		"rect" : [ 348.0, 86.0, 1206.0, 857.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,146 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1009.0, 582.0, 69.0, 114.0 ],
+					"presentation_rect" : [ 1012.0, 581.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "pourcentage de diff entre la fréquence de la note et la freq détectée en %"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 920.0, 582.0, 75.0, 60.0 ],
+					"presentation_rect" : [ 923.0, 582.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "note de 0 à 11 sur la gamme chromatique"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 834.0, 578.0, 69.0, 20.0 ],
+					"presentation_rect" : [ 832.0, 576.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "Frequence"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-16",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 1015.5, 548.0, 56.0, 22.0 ],
+					"presentation_rect" : [ 889.0, 662.0, 0.0, 0.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 926.5, 552.0, 56.0, 22.0 ],
+					"presentation_rect" : [ 802.0, 669.0, 0.0, 0.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-11",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 840.5, 548.0, 56.0, 22.0 ],
+					"presentation_rect" : [ 714.0, 666.0, 0.0, 0.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 761.5, 548.0, 56.0, 22.0 ],
+					"presentation_rect" : [ 635.0, 665.0, 0.0, 0.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 17,
+					"numoutlets" : 16,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
+					"patching_rect" : [ 649.0, 668.0, 144.0, 22.0 ],
+					"style" : "",
+					"text" : "analyseSpectrale.maxpat",
+					"varname" : "analyseSpectrale"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "signal", "signal" ],
+					"patching_rect" : [ 826.0, 458.0, 128.0, 22.0 ],
+					"style" : "",
+					"text" : "pitchDetection.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -59,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1024.0, 467.0, 56.0, 22.0 ],
+					"patching_rect" : [ 562.0, 604.0, 56.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -136,7 +276,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1027.0, 301.0, 150.0, 33.0 ],
+					"patching_rect" : [ 578.0, 473.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Détection de l'envelloppe pour modifier la vidéo"
 				}
@@ -149,7 +289,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 800.0, 125.0, 150.0, 33.0 ],
+					"patching_rect" : [ 643.0, 134.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "reception du flux sonnor provenant de la RA"
 				}
@@ -162,7 +302,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1011.0, 336.0, 158.0, 22.0 ],
+					"patching_rect" : [ 562.0, 508.0, 158.0, 22.0 ],
 					"style" : "",
 					"text" : "detectionEnveloppe.maxpat"
 				}
@@ -174,7 +314,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 826.0, 309.0, 45.0, 45.0 ],
+					"patching_rect" : [ 352.0, 515.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -186,7 +326,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 788.0, 160.0, 174.0, 22.0 ],
+					"patching_rect" : [ 631.0, 169.0, 174.0, 22.0 ],
 					"style" : "",
 					"text" : "receptionAudioReseau.maxpat"
 				}
@@ -213,7 +353,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -223,7 +363,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -233,7 +373,7 @@
 					"destination" : [ "obj-3", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -243,7 +383,27 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
+					"order" : 2,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -263,6 +423,42 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -288,8 +484,38 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-6::obj-52::obj-13" : [ "flonum[15]", "flonum", 0 ],
+			"obj-6::obj-71::obj-16" : [ "flonum[20]", "flonum[1]", 0 ],
+			"obj-6::obj-37::obj-16" : [ "flonum[22]", "flonum[1]", 0 ],
+			"obj-6::obj-26::obj-16" : [ "flonum[28]", "flonum[1]", 0 ],
+			"obj-6::obj-83::obj-13" : [ "flonum[3]", "flonum", 0 ],
+			"obj-6::obj-91::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
+			"obj-6::obj-94::obj-16" : [ "flonum[8]", "flonum[1]", 0 ],
+			"obj-6::obj-102::obj-16" : [ "flonum[10]", "flonum[1]", 0 ],
+			"obj-6::obj-58::obj-16" : [ "flonum[18]", "flonum[1]", 0 ],
+			"obj-6::obj-30::obj-16" : [ "flonum[26]", "flonum[1]", 0 ],
+			"obj-6::obj-52::obj-16" : [ "flonum[14]", "flonum[1]", 0 ],
+			"obj-6::obj-55::obj-16" : [ "flonum[16]", "flonum[1]", 0 ],
+			"obj-6::obj-88::obj-13" : [ "flonum[5]", "flonum", 0 ],
+			"obj-6::obj-71::obj-13" : [ "flonum[21]", "flonum", 0 ],
+			"obj-6::obj-33::obj-16" : [ "flonum[24]", "flonum[1]", 0 ],
+			"obj-6::obj-26::obj-13" : [ "flonum[29]", "flonum", 0 ],
+			"obj-6::obj-19::obj-13" : [ "flonum[31]", "flonum", 0 ],
+			"obj-6::obj-94::obj-13" : [ "flonum[9]", "flonum", 0 ],
+			"obj-6::obj-49::obj-16" : [ "flonum[12]", "flonum[1]", 0 ],
 			"obj-2::obj-13" : [ "flonum", "flonum", 0 ],
-			"obj-2::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
+			"obj-6::obj-58::obj-13" : [ "flonum[19]", "flonum", 0 ],
+			"obj-6::obj-30::obj-13" : [ "flonum[27]", "flonum", 0 ],
+			"obj-6::obj-88::obj-16" : [ "flonum[4]", "flonum[1]", 0 ],
+			"obj-6::obj-91::obj-13" : [ "flonum[7]", "flonum", 0 ],
+			"obj-2::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
+			"obj-6::obj-55::obj-13" : [ "flonum[17]", "flonum", 0 ],
+			"obj-6::obj-37::obj-13" : [ "flonum[23]", "flonum", 0 ],
+			"obj-6::obj-33::obj-13" : [ "flonum[25]", "flonum", 0 ],
+			"obj-6::obj-19::obj-16" : [ "flonum[30]", "flonum[1]", 0 ],
+			"obj-6::obj-83::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
+			"obj-6::obj-102::obj-13" : [ "flonum[11]", "flonum", 0 ],
+			"obj-6::obj-49::obj-13" : [ "flonum[13]", "flonum", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -312,8 +538,26 @@
 			}
 , 			{
 				"name" : "anton.aif",
-				"bootpath" : "C74:/media/msp",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/media",
 				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pitchDetection.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "analyseSpectrale.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "classic-channel.maxpat",
+				"bootpath" : "/Users/Shared/Max 7/Examples/effects/classic-vocoder-folder/lib",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
