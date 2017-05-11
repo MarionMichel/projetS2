@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 103.0, 1030.0, 612.0 ],
+		"rect" : [ 264.0, 260.0, 1030.0, 612.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,17 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 764.0, 554.0, 45.0, 45.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-89",
 					"maxclass" : "comment",
@@ -207,7 +218,7 @@
 					"patching_rect" : [ 326.5, 228.388885, 22.0, 82.0 ],
 					"size" : 5,
 					"style" : "",
-					"value" : 3
+					"value" : 1
 				}
 
 			}
@@ -240,7 +251,6 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-66",
-					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -266,7 +276,6 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-63",
-					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -292,7 +301,6 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-50",
-					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -658,10 +666,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 2,
 					"source" : [ "obj-74", 0 ]
 				}
 
@@ -671,7 +696,6 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-74", 0 ]
 				}
 
@@ -681,7 +705,6 @@
 					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-74", 0 ]
 				}
 
@@ -723,6 +746,20 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "osc.maxpat",
+				"bootpath" : "~/Documents/projetS2/ressourcesMAX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "filtrage.maxpat",
+				"bootpath" : "~/Documents/projetS2/ressourcesMAX",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
