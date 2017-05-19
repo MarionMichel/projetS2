@@ -38,13 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 521.0, 633.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "A multiplier car chiffre compris entre 0 et 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1009.0, 582.0, 69.0, 114.0 ],
-					"presentation_rect" : [ 1012.0, 581.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "pourcentage de diff entre la fréquence de la note et la freq détectée en %"
 				}
@@ -58,7 +70,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 920.0, 582.0, 75.0, 60.0 ],
-					"presentation_rect" : [ 923.0, 582.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "note de 0 à 11 sur la gamme chromatique"
 				}
@@ -71,7 +82,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 834.0, 578.0, 69.0, 20.0 ],
-					"presentation_rect" : [ 832.0, 576.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "Frequence"
 				}
@@ -89,7 +99,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 1015.5, 548.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 889.0, 662.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -107,7 +116,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 926.5, 552.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 802.0, 669.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -125,7 +133,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 840.5, 548.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 714.0, 666.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
 				}
@@ -143,23 +150,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 761.5, 548.0, 56.0, 22.0 ],
-					"presentation_rect" : [ 635.0, 665.0, 0.0, 0.0 ],
 					"sig" : 0.0,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 17,
-					"numoutlets" : 16,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 649.0, 668.0, 144.0, 22.0 ],
-					"style" : "",
-					"text" : "analyseSpectrale.maxpat",
-					"varname" : "analyseSpectrale"
 				}
 
 			}
@@ -227,20 +219,20 @@
 								"loop" : 1,
 								"content_state" : 								{
 									"followglobaltempo" : [ 0 ],
-									"play" : [ 0 ],
-									"mode" : [ "basic" ],
-									"quality" : [ "basic" ],
-									"pitchcorrection" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
-									"originallengthms" : [ 0.0 ],
-									"timestretch" : [ 0 ],
-									"formant" : [ 1.0 ],
 									"basictuning" : [ 440 ],
+									"play" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
 									"speed" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ]
+									"pitchcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ]
 								}
 
 							}
@@ -484,38 +476,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-52::obj-13" : [ "flonum[15]", "flonum", 0 ],
-			"obj-6::obj-71::obj-16" : [ "flonum[20]", "flonum[1]", 0 ],
-			"obj-6::obj-37::obj-16" : [ "flonum[22]", "flonum[1]", 0 ],
-			"obj-6::obj-26::obj-16" : [ "flonum[28]", "flonum[1]", 0 ],
-			"obj-6::obj-83::obj-13" : [ "flonum[3]", "flonum", 0 ],
-			"obj-6::obj-91::obj-16" : [ "flonum[6]", "flonum[1]", 0 ],
-			"obj-6::obj-94::obj-16" : [ "flonum[8]", "flonum[1]", 0 ],
-			"obj-6::obj-102::obj-16" : [ "flonum[10]", "flonum[1]", 0 ],
-			"obj-6::obj-58::obj-16" : [ "flonum[18]", "flonum[1]", 0 ],
-			"obj-6::obj-30::obj-16" : [ "flonum[26]", "flonum[1]", 0 ],
-			"obj-6::obj-52::obj-16" : [ "flonum[14]", "flonum[1]", 0 ],
-			"obj-6::obj-55::obj-16" : [ "flonum[16]", "flonum[1]", 0 ],
-			"obj-6::obj-88::obj-13" : [ "flonum[5]", "flonum", 0 ],
-			"obj-6::obj-71::obj-13" : [ "flonum[21]", "flonum", 0 ],
-			"obj-6::obj-33::obj-16" : [ "flonum[24]", "flonum[1]", 0 ],
-			"obj-6::obj-26::obj-13" : [ "flonum[29]", "flonum", 0 ],
-			"obj-6::obj-19::obj-13" : [ "flonum[31]", "flonum", 0 ],
-			"obj-6::obj-94::obj-13" : [ "flonum[9]", "flonum", 0 ],
-			"obj-6::obj-49::obj-16" : [ "flonum[12]", "flonum[1]", 0 ],
 			"obj-2::obj-13" : [ "flonum", "flonum", 0 ],
-			"obj-6::obj-58::obj-13" : [ "flonum[19]", "flonum", 0 ],
-			"obj-6::obj-30::obj-13" : [ "flonum[27]", "flonum", 0 ],
-			"obj-6::obj-88::obj-16" : [ "flonum[4]", "flonum[1]", 0 ],
-			"obj-6::obj-91::obj-13" : [ "flonum[7]", "flonum", 0 ],
-			"obj-2::obj-16" : [ "flonum[1]", "flonum[1]", 0 ],
-			"obj-6::obj-55::obj-13" : [ "flonum[17]", "flonum", 0 ],
-			"obj-6::obj-37::obj-13" : [ "flonum[23]", "flonum", 0 ],
-			"obj-6::obj-33::obj-13" : [ "flonum[25]", "flonum", 0 ],
-			"obj-6::obj-19::obj-16" : [ "flonum[30]", "flonum[1]", 0 ],
-			"obj-6::obj-83::obj-16" : [ "flonum[2]", "flonum[1]", 0 ],
-			"obj-6::obj-102::obj-13" : [ "flonum[11]", "flonum", 0 ],
-			"obj-6::obj-49::obj-13" : [ "flonum[13]", "flonum", 0 ]
+			"obj-2::obj-16" : [ "flonum[1]", "flonum[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -545,18 +507,6 @@
 , 			{
 				"name" : "pitchDetection.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "analyseSpectrale.maxpat",
-				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "classic-channel.maxpat",
-				"bootpath" : "/Users/Shared/Max 7/Examples/effects/classic-vocoder-folder/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
