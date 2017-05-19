@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 3,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -38,9 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 120.0, 434.0, 45.0, 45.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-27",
-					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -54,11 +64,10 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-26",
-					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 422.0, 55.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -68,7 +77,6 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-25",
-					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -245,8 +253,8 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.90625, 0, 1000.0, 0.125, 0, 3000.0, 0.015062, 0, 4999.999512, 0.0, 0 ],
-					"domain" : 5000.0,
+					"addpoints" : [ 0.0, 0.90625, 0, 0.2, 0.125, 0, 0.6, 0.015062, 0, 1.0, 0.0, 0 ],
+					"domain" : 1.0,
 					"id" : "obj-13",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -260,8 +268,8 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 6.0, 0, 4999.999512, 0.0, 0 ],
-					"domain" : 5000.0,
+					"addpoints" : [ 0.0, 6.0, 0, 1.0, 0.0, 0 ],
+					"domain" : 1.0,
 					"id" : "obj-14",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -405,7 +413,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 246.977814, 103.410889, 478.991455, 103.410889 ],
-					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -415,7 +422,6 @@
 					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -455,6 +461,24 @@
 					"hidden" : 0,
 					"midpoints" : [ 539.991455, 308.386139, 63.757679, 308.386139 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -508,7 +532,6 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -518,7 +541,6 @@
 					"destination" : [ "obj-14", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -556,7 +578,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 67.899323, 103.410889, 478.991455, 103.410889 ],
-					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -567,12 +588,19 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"midpoints" : [ 67.899323, 103.410889, 246.977814, 103.410889 ],
-					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "simpleFM~.maxpat",
+				"bootpath" : "C74:/docs/tutorial-patchers/msp-tut",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
