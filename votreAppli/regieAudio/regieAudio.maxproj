@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -716936378,
-	"viewrect" : [ 394.0, 134.0, 300.0, 500.0 ],
+	"modificationdate" : -716933858,
+	"viewrect" : [ 0.0, 45.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -19,6 +19,20 @@
 			"syntheseSoustractive.maxpat" : 			{
 				"kind" : "patcher"
 			}
+,
+			"mainEffetAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Documents/projetS2/ressourcesMAX",
+					"projectrelativepath" : "../../ressourcesMAX"
+				}
+
+			}
+
+		}
+,
+		"media" : 		{
 
 		}
 
