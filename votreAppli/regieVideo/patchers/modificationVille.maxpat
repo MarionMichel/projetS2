@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 458.0, 279.0, 845.0, 624.0 ],
+		"rect" : [ 34.0, 79.0, 1612.0, 857.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -147,7 +147,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 529.0, 47.0, 30.0, 30.0 ],
 					"style" : ""
 				}
