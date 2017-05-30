@@ -2,8 +2,8 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -717607481,
-	"viewrect" : [ 0.0, 125.0, 300.0, 500.0 ],
+	"modificationdate" : -715974121,
+	"viewrect" : [ 124.0, 262.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"lecteurImage.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"receptionAudioReseau.maxpat" : 			{
@@ -50,6 +55,26 @@
 			}
 ,
 			"Louis_Armstrong_restored.jpg" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"ville.jpg" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"trompette.jpg" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"piano.JPG" : 			{
+				"kind" : "imagefile",
+				"local" : 1
+			}
+,
+			"neon.jpg" : 			{
 				"kind" : "imagefile",
 				"local" : 1
 			}
