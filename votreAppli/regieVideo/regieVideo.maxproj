@@ -2,8 +2,8 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -715974121,
-	"viewrect" : [ 124.0, 262.0, 300.0, 500.0 ],
+	"modificationdate" : -715971214,
+	"viewrect" : [ 55.0, 227.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -16,12 +16,17 @@
 				"toplevel" : 1
 			}
 ,
-			"lecteurImage.maxpat" : 			{
+			"modificationPiano.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"receptionAudioReseau.maxpat" : 			{
+			"pitchDetection.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"lecteurImage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -31,12 +36,12 @@
 				"local" : 1
 			}
 ,
-			"envoiAudioReseau.maxpat" : 			{
+			"receptionAudioReseau.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"pitchDetection.maxpat" : 			{
+			"envoiAudioReseau.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
