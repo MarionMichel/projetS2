@@ -2,7 +2,7 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -715968837,
+	"modificationdate" : -715965207,
 	"viewrect" : [ 55.0, 227.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -14,16 +14,6 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
-			}
-,
-			"modificationNeon.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"modificationVille.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
 			}
 ,
 			"pitchDetection.maxpat" : 			{
@@ -52,6 +42,21 @@
 			}
 ,
 			"modificationPiano.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"modificationNeon.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"modificationTrompette.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"modificationVille.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}

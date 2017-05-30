@@ -38,15 +38,13 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-35",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 1022.0, 581.0, 50.0, 22.0 ],
-					"style" : ""
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 879.0, 579.0, 170.0, 22.0 ],
+					"style" : "",
+					"text" : "modificationTrompette.maxpat"
 				}
 
 			}
@@ -57,7 +55,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 977.666626, 506.0, 49.0, 22.0 ],
+					"patching_rect" : [ 665.666626, 595.0, 49.0, 22.0 ],
 					"style" : "",
 					"text" : "* 1500."
 				}
@@ -70,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 848.0, 611.0, 138.0, 22.0 ],
+					"patching_rect" : [ 581.0, 631.0, 138.0, 22.0 ],
 					"style" : "",
 					"text" : "modificationVille.maxpat"
 				}
@@ -83,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1007.666626, 409.0, 83.0, 22.0 ],
+					"patching_rect" : [ 649.0, 566.0, 83.0, 22.0 ],
 					"style" : "",
 					"text" : "snapshot~ 10"
 				}
@@ -96,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 546.0, 619.0, 144.0, 22.0 ],
+					"patching_rect" : [ 279.0, 639.0, 144.0, 22.0 ],
 					"style" : "",
 					"text" : "modificationNeon.maxpat"
 				}
@@ -200,7 +198,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 59.0, 528.0, 24.0, 24.0 ],
+					"patching_rect" : [ 755.166626, 1015.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -211,7 +209,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 122.0, 611.0, 152.0, 22.0 ],
+					"patching_rect" : [ 818.166626, 1098.0, 152.0, 22.0 ],
 					"style" : "",
 					"text" : "envoiAudioReseau.maxpat"
 				}
@@ -294,7 +292,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 66.0, 81.0, 24.0, 24.0 ],
+					"patching_rect" : [ 283.0, 469.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -307,7 +305,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 260.0, 81.0, 24.0, 24.0 ],
+					"patching_rect" : [ 587.0, 469.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -345,7 +343,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 260.0, 143.0, 166.0, 22.0 ],
+					"patching_rect" : [ 587.0, 531.0, 166.0, 22.0 ],
 					"style" : "",
 					"text" : "lecteurImage.maxpat ville.jpg"
 				}
@@ -358,7 +356,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 66.0, 143.0, 172.0, 22.0 ],
+					"patching_rect" : [ 283.0, 531.0, 172.0, 22.0 ],
 					"style" : "",
 					"text" : "lecteurImage.maxpat neon.jpg"
 				}
@@ -382,7 +380,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 457.0, 207.0, 180.0, 176.0 ]
+					"patching_rect" : [ 1067.0, 724.0, 180.0, 176.0 ]
 				}
 
 			}
@@ -393,7 +391,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 835.0, 689.0, 176.0, 179.0 ]
+					"patching_rect" : [ 568.0, 709.0, 176.0, 179.0 ]
 				}
 
 			}
@@ -404,7 +402,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 535.0, 682.0, 192.0, 179.0 ]
+					"patching_rect" : [ 268.0, 702.0, 192.0, 179.0 ]
 				}
 
 			}
@@ -529,7 +527,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.0, 458.0, 261.0, 20.0 ],
+					"patching_rect" : [ 790.166626, 945.0, 261.0, 20.0 ],
 					"style" : "",
 					"text" : "à supprimer quand A7 fonctionnelle"
 				}
@@ -569,7 +567,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 122.0, 502.0, 150.0, 30.0 ],
+					"patching_rect" : [ 818.166626, 989.0, 150.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -583,7 +581,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.5, 424.0, 383.0, 250.0 ],
+					"patching_rect" : [ 715.666626, 911.0, 383.0, 250.0 ],
 					"proportion" : 0.39,
 					"style" : ""
 				}
@@ -673,15 +671,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -721,17 +710,6 @@
 					"destination" : [ "obj-33", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"order" : 1,
-					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"order" : 0,
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -956,6 +934,12 @@
 			}
 , 			{
 				"name" : "modificationVille.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "modificationTrompette.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
 				"type" : "JSON",
 				"implicit" : 1
