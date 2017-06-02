@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -715964611,
-	"viewrect" : [ 0.0, 45.0, 300.0, 500.0 ],
+	"modificationdate" : -715728404,
+	"viewrect" : [ 120.0, 172.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"envoiAudioReseau.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"syntheseSoustractive.maxpat" : 			{
