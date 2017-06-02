@@ -2,7 +2,7 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -715727534,
+	"modificationdate" : -715703580,
 	"viewrect" : [ 55.0, 227.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -16,8 +16,8 @@
 				"toplevel" : 1
 			}
 ,
-			"assemblage.maxpat" : 			{
-				"kind" : "patcher",
+			"receptionRegie.maxpat" : 			{
+				"kind" : "helpfile",
 				"local" : 1
 			}
 ,
@@ -66,6 +66,11 @@
 				"local" : 1
 			}
 ,
+			"assemblage.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"analyseSpectrale.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -103,6 +108,10 @@
 				"kind" : "imagefile",
 				"local" : 1
 			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 
