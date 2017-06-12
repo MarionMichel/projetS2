@@ -2,8 +2,8 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -715974121,
-	"viewrect" : [ 124.0, 262.0, 300.0, 500.0 ],
+	"modificationdate" : -715703580,
+	"viewrect" : [ 55.0, 227.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -16,12 +16,17 @@
 				"toplevel" : 1
 			}
 ,
-			"lecteurImage.maxpat" : 			{
+			"receptionRegie.maxpat" : 			{
+				"kind" : "helpfile",
+				"local" : 1
+			}
+,
+			"pitchDetection.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"receptionAudioReseau.maxpat" : 			{
+			"lecteurImage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -31,12 +36,37 @@
 				"local" : 1
 			}
 ,
+			"receptionAudioReseau.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"envoiAudioReseau.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"pitchDetection.maxpat" : 			{
+			"modificationPiano.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"modificationNeon.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"modificationVille.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"modificationTrompette.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"assemblage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -78,6 +108,10 @@
 				"kind" : "imagefile",
 				"local" : 1
 			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 
