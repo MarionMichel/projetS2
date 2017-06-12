@@ -45,7 +45,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 811.0, 493.0, 83.0, 26.0 ],
 					"style" : "",
-					"text" : "loadmess -35"
+					"text" : "loadmess -45"
 				}
 
 			}
@@ -403,7 +403,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 231.0, 56.0, 30.0, 30.0 ],
 					"style" : ""
 				}
